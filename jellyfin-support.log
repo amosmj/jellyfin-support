@@ -1,2 +1,14 @@
 2025-12-21 15:28:24,287 - INFO - main.py started
 2025-12-21 15:28:24,288 - INFO - main.py ended
+2025-12-21 16:07:57,662 - INFO - main.py started
+2025-12-21 16:07:57,662 - INFO - Running function: have_user_designate_folder
+2025-12-21 16:08:08,206 - INFO - Directory was selected as /Volumes/My Passport for Mac
+2025-12-21 16:08:08,207 - INFO - Completed function: have_user_designate_folder
+2025-12-21 16:08:12,273 - INFO - Directory was selected as /Volumes/My Passport for Mac
+2025-12-21 16:08:12,273 - INFO - main.py ended
+2025-12-21 16:08:44,311 - INFO - main.py started
+2025-12-21 16:08:44,311 - INFO - Running function: have_user_designate_folder
+2025-12-21 16:08:52,899 - INFO - Directory was selected as /Users/mike
+2025-12-21 16:08:52,900 - INFO - Completed function: have_user_designate_folder
+2025-12-21 16:08:57,307 - INFO - Directory was selected as /Volumes/My Passport for Mac
+2025-12-21 16:08:57,307 - INFO - main.py ended

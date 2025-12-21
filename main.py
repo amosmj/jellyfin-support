@@ -2,6 +2,7 @@ import logging
 import os
 
 import paramiko
+import tkinter as tk
 
 my_log = logging.getLogger('jellyfin-support')
 logging.basicConfig(filename='jellyfin-support.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -13,6 +14,9 @@ def log_me(passing_function):
         my_log.info(f"Completed function: {passing_function.__name__}")
         return passing_function(*args, **kwargs)
     return logger
+
+def have_user_designate_folder():
+    raise NotImplementedError
 
 def make_list_of_dirs(dir: str):
     raise NotImplementedError

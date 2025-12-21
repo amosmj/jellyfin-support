@@ -18,8 +18,8 @@ def log_me(passing_function):
 
 @log_me
 def have_user_designate_folder()-> str:
-    root = tk.Tk()
-    root.withdraw()
+    # root = tk.Tk()
+    # root.withdraw()
     dirname = filedialog.askdirectory()
     my_log.info(f"Directory was selected as {dirname}")
     return dirname

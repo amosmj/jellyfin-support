@@ -18,3 +18,11 @@
 2025-12-21 16:09:57,613 - INFO - Completed function: have_user_designate_folder
 2025-12-21 16:10:00,646 - INFO - Directory was selected as /Users
 2025-12-21 16:10:00,647 - INFO - main.py ended
+2025-12-21 16:12:19,067 - INFO - main.py started
+2025-12-21 16:12:19,068 - INFO - main.py ended
+2025-12-21 16:12:27,972 - INFO - main.py started
+2025-12-21 16:12:27,972 - INFO - Running function: have_user_designate_folder
+2025-12-21 16:12:33,247 - INFO - Directory was selected as /Applications
+2025-12-21 16:12:33,247 - INFO - Completed function: have_user_designate_folder
+2025-12-21 16:12:35,943 - INFO - Directory was selected as /Users
+2025-12-21 16:12:35,944 - INFO - main.py ended

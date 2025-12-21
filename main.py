@@ -11,9 +11,9 @@ logging.basicConfig(filename='jellyfin-support.log', level=logging.INFO, format=
 def log_me(passing_function):
     def logger(*args, **kwargs):
         my_log.info(f"Running function: {passing_function.__name__}")
-        passing_function()
+        result = passing_function(*args, **kwargs)
         my_log.info(f"Completed function: {passing_function.__name__}")
-        return passing_function(*args, **kwargs)
+        return result
     return logger
 
 @log_me

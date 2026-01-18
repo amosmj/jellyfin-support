@@ -49,12 +49,32 @@ def simple_string_replacement(substring_to_replace: str, replace_with: str, list
     return list_of_files_out
                 
 
-def rename_mkv_files_to_match_directories(root_directory: str, file_type: str|None = None):
+def rename_mp4_files_to_match_directories_and_clean_up_mkv(file_type: str|None = None):
     dir_list = []
-    while len(dir_list) < 1{}
+    while len(dir_list) < 1:
         root_path = have_user_designate_folder()
-
+        root_dir = pathlib.Path(root_path)
+        if root_dir.is_dir():
+            dir_list.append(root_dir)
+        else:
+            print("It doesn't look like you selected a directory. Please do so")
     ## Look in directory for files and directories
+    while len(dir_list) > 0:
+        working_obj = dir_list[0]
+        ## need to get the final directory name here for renaming
+        working_obj_parts = working_obj.split('/')
+        name_to_sub = working_obj_parts[-1:]
+        for obj in working_obj:
+            if obj.is_dir():
+                dir_list.append(obj)
+            else: # not a directory. Probably file, see if it's target file type
+                try:
+                    file_type_len = len(file_type) * -1
+                except: # thinking this is what will happen if file_type is None
+                    file_type_len = 0
+                if file_type == obj[file_type_len]: # file_type we want, rename
+
+            
     ## for files
         ## if file_type matches or file_type = None
         ## provide feedback
